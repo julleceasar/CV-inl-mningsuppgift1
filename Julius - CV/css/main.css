@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fredoka+One&family=Roboto&display=swap');
+
+/* GLOBAL */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+main {
+    padding-top: 65px;
+}
+
+
+
+
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 45px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+
+}
+
+header h1 {
+    font-family: 'Fredoka One', cursive;   
+     font-size: 25px;
+    letter-spacing: 2px;
+    display: inline-block;
+}
+
+/* NAV-BAR */
+
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    text-transform: uppercase;
+    font-family:  'Fredoka One', cursive; 
+    font-size: 15px;
+    color: white;
+    
+
+    
+}
+
+.nav a {
+    text-decoration: none;
+    color: white; 
+    display: block;
+    transition: all 0.3s ease-out;
+    letter-spacing: 1px;
+
+
+}
+
+.nav a:hover {
+    opacity: 0.8;
+    transform: rotate(5deg);
+    
+}
+
+.nav .current {
+    color:orange;
+}
+
+
+/* HERO */
+
+.background-img {
+    background-image: url('../img/man-1853545_1920.jpg'); 
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;  
+}
+
+.hero {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin: 0;
+    padding-top: 25px;
+}
+
+.hero p {
+    font-size: 16px;
+}
+
+.selfie img {
+    border-radius: 50%;
+}
+
+
+/* Kort Presentation */
+
+.info {
+    color: black;
+    padding: 20px 45px;
+    width: 70%;
+    
+    
+}
+
+
+
+/* BANNER header - OM MIG */
+
+.banner {
+    background-image: url('../img/man-1853545_1920.jpg');
+    background-position: center;
+    height: 150px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+
+    
+}
+
+.banner h1 {
+    font-size: 40px;
+}
+
+
+/* OM MIG BOXES */
+
+#boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+    
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    flex-basis: 30%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    line-height: 1.5em;
+}
+
+
+
+.box img {
+
+    height: 250px;
+    width: 250px;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #1e1f22;
+    color: white;
+    padding: 20px;
+}
+
+i {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+/* -------------------- MEDIAQUERY ------------------------- */
+
+@media screen and (max-width: 600px) {
+    header  {
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+    .info {
+        width: 100%;
+    }
+
+   }
+
+
+
+
